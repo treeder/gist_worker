@@ -8,6 +8,7 @@ IronWorker.configure do |config|
 end
 
 require_relative '../lib/gist_worker'
+#require 'gist_worker'
 
 worker = GistWorker::Worker.new
 worker.gist_id = "1989106"
